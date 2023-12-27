@@ -7,7 +7,7 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 export default function Main() {
     const [user, setuser] = useState();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const auth = getAuth(app);
     const database = getFirestore(app);
 
@@ -16,7 +16,7 @@ export default function Main() {
     }, [])
 
     const fatchdata = async () => {
-        const querySnapshot = await getDocs(collection(database, "users"));
+        const querySnapshot = await getDocs(collection(database, "computers"));
         let newList = [];
         querySnapshot.forEach((doc) => {
             let id = doc.id;
@@ -29,7 +29,7 @@ export default function Main() {
     const handleLogout = () => {
         signOut(auth).then(() => {
             localStorage.clear();
-            navigate("/")
+            // navigate("/")
         }).catch((error) => {
             // An error happened.
         });

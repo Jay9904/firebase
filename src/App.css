@@ -1,38 +1,14 @@
-.App {
-  text-align: center;
+.title {
+  font-family: Rubik Doodle Shadow;
+  color: #202020;
+  text-shadow: 1px 1px 0px#7D0A0A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#usertable {
+  /* background-color: #202020; */
+  background-image: radial-gradient(circle farthest-corner at 5.3% 17.2%, rgba(255, 208, 253, 1) 0%, rgba(255, 237, 216, 1) 90%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#card:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
