@@ -101,10 +101,10 @@ export default function Lab() {
         if (fruit) {
             Swal.fire("PC Assign SuccessFully");
             button.target.disabled = true;
-        button.target.className = 'btn btn-outline-danger border-3 btn-sm rounded fw-bolder my-2 w-100';
-        button.target.innerText = "Alredy Assign";
+            button.target.className = 'btn btn-outline-danger border-3 btn-sm rounded fw-bolder my-2 w-100';
+            button.target.innerText = "Alredy Assign";
         }
-        
+
     }
 
     return (
